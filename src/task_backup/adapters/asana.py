@@ -62,7 +62,7 @@ class AsanaAdapter(BaseAdapter):
                 parent_id=asana_task.get("parent", {}).get("gid"),
                 tags=tags,
                 subtasks=subtasks,
-                assignees=[assignee.get("gid", "") for assignee in asana_task.get("assignee", [])],
+                assignees=[assignee.get("gid", "") for assignee in asana_task.get("assignees", [])],
                 platform_data={"asana": asana_task}
             )
             tasks.append(task)

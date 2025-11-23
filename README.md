@@ -45,26 +45,26 @@ pip install -e .
 
 ```bash
 # Backup from Google Tasks
-python -m task_backup.cli backup google_tasks examples/google_tasks_sample.json --format json
+python -m task_backup backup google_tasks examples/google_tasks_sample.json --format json
 
 # Backup from Todoist to TOML format
-python -m task_backup.cli backup todoist examples/todoist_sample.json --format toml
+python -m task_backup backup todoist examples/todoist_sample.json --format toml
 ```
 
 ### Migrating Between Platforms
 
 ```bash
 # Migrate from Google Tasks to Todoist
-python -m task_backup.cli migrate backup_google_tasks.json google_tasks todoist --output todoist_migrated.json
+python -m task_backup migrate backup_google_tasks.json google_tasks todoist --output todoist_migrated.json
 
 # Migrate from Microsoft To Do to Notion
-python -m task_backup.cli migrate backup_microsoft_todo.json microsoft_todo notion --format json
+python -m task_backup migrate backup_microsoft_todo.json microsoft_todo notion --format json
 ```
 
 ### List Supported Platforms
 
 ```bash
-python -m task_backup.cli list
+python -m task_backup list
 ```
 
 ## Usage Examples

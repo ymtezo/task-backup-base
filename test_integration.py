@@ -40,6 +40,7 @@ def test_format_handlers():
     
     from task_backup.models import Backup
     from datetime import datetime
+    import tempfile
     
     backup = Backup(
         source_platform="test",
@@ -49,20 +50,24 @@ def test_format_handlers():
     
     # Test JSON
     json_handler = get_handler('json')
-    json_path = Path('/tmp/test_backup.json')
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+        json_path = Path(f.name)
     json_handler.save(backup, json_path)
     loaded_backup = json_handler.load(json_path)
     assert len(loaded_backup.tasks) == 1
     assert loaded_backup.tasks[0].title == "Test Task"
+    json_path.unlink()  # Clean up
     print("✓ JSON format handler works")
     
     # Test TOML
     toml_handler = get_handler('toml')
-    toml_path = Path('/tmp/test_backup.toml')
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.toml', delete=False) as f:
+        toml_path = Path(f.name)
     toml_handler.save(backup, toml_path)
     loaded_backup = toml_handler.load(toml_path)
     assert len(loaded_backup.tasks) == 1
     assert loaded_backup.tasks[0].title == "Test Task"
+    toml_path.unlink()  # Clean up
     print("✓ TOML format handler works\n")
 
 
