@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "gid": "proj_001",
+      "name": "Website Redesign",
+      "notes": "Complete redesign of company website",
+      "color": "dark-purple",
+      "created_at": "2025-01-01T00:00:00Z",
+      "modified_at": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "gid": "task_001",
+      "name": "Design homepage mockup",
+      "notes": "Create initial design concepts",
+      "completed": false,
+      "due_on": "2025-01-25",
+      "created_at": "2025-01-10T09:00:00Z",
+      "modified_at": "2025-01-15T10:00:00Z",
+      "projects": [
+        {
+          "gid": "proj_001"
+        }
+      ],
+      "tags": [
+        {
+          "name": "design",
+          "color": "light-pink"
+        }
+      ],
+      "subtasks": [
+        {
+          "name": "Research competitors",
+          "completed": true
+        },
+        {
+          "name": "Sketch wireframes",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

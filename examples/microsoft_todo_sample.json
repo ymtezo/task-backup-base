@@ -1,0 +1,35 @@
+{
+  "lists": [
+    {
+      "id": "list_001",
+      "displayName": "Work Tasks"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Prepare presentation",
+      "body": {
+        "content": "Create slides for client meeting"
+      },
+      "status": "notStarted",
+      "importance": "high",
+      "dueDateTime": {
+        "dateTime": "2025-01-18T14:00:00"
+      },
+      "createdDateTime": "2025-01-10T09:00:00Z",
+      "lastModifiedDateTime": "2025-01-15T10:00:00Z",
+      "listId": "list_001",
+      "checklistItems": [
+        {
+          "displayName": "Research topic",
+          "isChecked": true
+        },
+        {
+          "displayName": "Create outline",
+          "isChecked": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "proj_001",
+      "name": "Health & Fitness",
+      "color": "green"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Morning workout",
+      "content": "30 minutes cardio",
+      "status": 0,
+      "priority": 3,
+      "dueDate": "2025-01-16T07:00:00Z",
+      "projectId": "proj_001",
+      "tags": ["exercise", "health"],
+      "items": [
+        {
+          "title": "Warm up",
+          "status": 2
+        },
+        {
+          "title": "Main exercise",
+          "status": 0
+        }
+      ],
+      "createdTime": "2025-01-10T06:00:00Z",
+      "modifiedTime": "2025-01-15T06:30:00Z"
+    }
+  ]
+}
