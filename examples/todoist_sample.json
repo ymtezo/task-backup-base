@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": "proj_001",
+      "name": "Personal",
+      "color": "blue"
+    }
+  ],
+  "items": [
+    {
+      "id": "item_001",
+      "content": "Buy groceries",
+      "description": "Milk, eggs, bread",
+      "checked": 0,
+      "priority": 3,
+      "project_id": "proj_001",
+      "labels": [],
+      "due": {
+        "date": "2025-01-16"
+      },
+      "added_at": "2025-01-15T08:00:00Z"
+    }
+  ],
+  "labels": [
+    {
+      "id": "label_001",
+      "name": "urgent",
+      "color": "red"
+    }
+  ]
+}

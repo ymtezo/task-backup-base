@@ -1,0 +1,30 @@
+{
+  "taskLists": [
+    {
+      "id": "list_001",
+      "title": "My Tasks",
+      "updated": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Complete project proposal",
+      "notes": "Need to finish the Q1 project proposal by end of week",
+      "status": "needsAction",
+      "due": "2025-01-20T17:00:00Z",
+      "created": "2025-01-10T09:00:00Z",
+      "updated": "2025-01-15T10:00:00Z",
+      "taskListId": "list_001"
+    },
+    {
+      "id": "task_002",
+      "title": "Review team feedback",
+      "status": "completed",
+      "completed": "2025-01-14T16:30:00Z",
+      "created": "2025-01-12T11:00:00Z",
+      "updated": "2025-01-14T16:30:00Z",
+      "taskListId": "list_001"
+    }
+  ]
+}
